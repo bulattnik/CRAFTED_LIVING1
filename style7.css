@@ -1,0 +1,829 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease; /* Header transition */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    transition: transform 0.3s ease; /* Logo animation */
+}
+
+/* Logo Hover Animation */
+.logo:hover {
+    transform: scale(1.05); /* Slight zoom */
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation li {
+    margin-left: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: #000000;
+}
+
+.cta-button {
+    background-color: #ff9019;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9019;
+}
+
+/* Search and Cart Styles */
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 5px;
+    transition: border-color 0.3s;
+}
+
+#search:focus {
+    border-color: #ff8f17;
+    outline: none;
+}
+
+.search-icon,
+.cart-button {
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-icon {
+    background-color: #ddd;
+}
+
+.search-icon:hover {
+    background-color: #ccc;
+}
+
+.cart-button {
+    background-color: #ff9626;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
+
+.cart-button:hover {
+    background-color: #cc853a;
+}
+
+/* Main Styles */
+.main {
+    background-color: #f3dfc4;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Advertisement Banner */
+.advertisement-banner {
+    background-color: #ff5722; /* Bright Orange */
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    animation: slideIn 0.8s ease-in-out; /* Banner animation */
+}
+
+.cta-banner-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-banner-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #ff5722;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.portfolio-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.portfolio-category {
+    margin-bottom: 40px;
+}
+
+.portfolio-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.house-info {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.house-info h4 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.house-info p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.house-info .price {
+    font-weight: bold;
+    color: #cc853a;
+    font-size: 1.1rem;
+    margin: 15px 0;
+}
+
+.details-button {
+    display: inline-block;
+    background-color: #cc853a;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: auto;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.details-button:hover {
+    background-color: #b36b2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(204, 133, 58, 0.2);
+}
+
+/* Footer Styles (Same as the other pages) */
+.footer {
+    background-color: #f3dfc4;
+    padding: 30px 0;
+    color: #965b12;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.company,
+.crafted-living,
+.stay-connected {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.company h3,
+.crafted-living h3,
+.stay-connected h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.company ul,
+.crafted-living ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.company li,
+.crafted-living li {
+    margin-bottom: 8px;
+}
+
+.company a,
+.crafted-living a {
+    text-decoration: none;
+    color: #965b12;
+    transition: color 0.3s;
+}
+
+.company a:hover,
+.crafted-living a:hover {
+    color: #ff9800;
+}
+
+.stay-connected {
+    text-align: left;
+}
+
+.stay-connected p {
+    margin-bottom: 8px;
+}
+
+.stay-connected .social-icons {
+    display: flex;
+    justify-content: left;
+}
+
+.stay-connected .social-icons a {
+    margin-right: 10px;
+}
+
+.stay-connected .social-icons img {
+    height: 30px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f3dfc4;
+    color: #965b12;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e09a51;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #cc853a;
+}
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%); /* Slide down from above */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+     .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navigation li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+      .portfolio h2 {
+         font-size: 2rem;
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 0 10px;
+    }
+    .portfolio-item img {
+        height: 180px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .company,
+    .crafted-living,
+    .stay-connected {
+        width: 100%;
+    }
+
+    .stay-connected .social-icons {
+        justify-content: center;
+    }
+
+    .details-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-button {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+/* Галерея изображений */
+.house-gallery {
+    margin-bottom: 30px;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail:hover,
+.thumbnail.active {
+    opacity: 1;
+}
+
+/* Информация о доме */
+.house-info-detailed {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.house-info-detailed h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.house-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.spec-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spec-item h3 {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.spec-item p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* План дома */
+.house-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.house-plan h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.house-plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.house-plan li {
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.house-plan li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8b7355;
+}
+
+/* Особенности */
+.house-features {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.house-features h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.house-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.house-features li {
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.house-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #8b7355;
+}
+
+/* Материалы */
+.house-materials {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.house-materials h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.house-materials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.house-materials li {
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.house-materials li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #8b7355;
+}
+
+/* Цена и кнопка */
+.house-price {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.house-price h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.house-price .price {
+    color: #8b7355;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.house-price .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #8b7355;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.house-price .cta-button:hover {
+    background-color: #6d5b43;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 20px auto;
+        padding: 20px;
+        width: 95%;
+    }
+
+    .main-image {
+        height: 300px;
+    }
+
+    .thumbnail {
+        width: 80px;
+        height: 60px;
+    }
+
+    .house-specs {
+        grid-template-columns: 1fr;
+    }
+
+    .house-info-detailed h2 {
+        font-size: 24px;
+    }
+
+    .spec-item,
+    .house-plan,
+    .house-features,
+    .house-materials,
+    .house-price {
+        padding: 15px;
+    }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-content {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Стили для кнопки "Подробнее" */
+.details-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8b7355;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.details-button:hover {
+    background-color: #6d5b43;
+}
+
+/* Стили для цветового режима */
+[data-theme="colorblind"] .modal-content {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+[data-theme="colorblind"] .house-info-detailed {
+    background-color: var(--background-color);
+}
+
+[data-theme="colorblind"] .spec-item,
+[data-theme="colorblind"] .house-plan,
+[data-theme="colorblind"] .house-features,
+[data-theme="colorblind"] .house-materials,
+[data-theme="colorblind"] .house-price {
+    background-color: var(--background-color);
+    border: 1px solid var(--text-color);
+}
+
+[data-theme="colorblind"] .house-price .price {
+    color: var(--price-color);
+}
+
+[data-theme="colorblind"] .details-button,
+[data-theme="colorblind"] .cta-button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+
+[data-theme="colorblind"] .details-button:hover,
+[data-theme="colorblind"] .cta-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.discount-badge {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.95em;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #a9a9a9;
+    font-size: 1em;
+    margin-right: 8px;
+}
+.new-price {
+    color: #e74c3c;
+    font-size: 1.2em;
+    font-weight: bold;
+}

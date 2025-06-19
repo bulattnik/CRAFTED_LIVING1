@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted Living - Портфолио</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="stylesheet" href="colorblind.css">
+</head>
+<body>
+    <button class="theme-switcher" onclick="toggleTheme()">
+        <span class="theme-icon">👁️</span>
+        <span>Режим для дальтоников</span>
+    </button>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div id="clock"></div>
+                    <img src="logo.png" alt="Crafted Living Logo" class="logo">
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="etapy_rabot.html">Этапы работ</a></li>
+                    <li><a href="uslugi.html">Услуги</a></li>
+                    <li><a href="proect.html">Проекты</a></li>
+                    <li><a href="card.html">Карта сайта</a></li>
+                    <li><a href="meproect.html">Свой проект</a></li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="zayavka.html" class="cta-button active">Оставить заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="portfolio">
+            <div class="portfolio-container">
+                <h2>Дома которые мы уже построили для наших клиентов</h2>
+                <div class="portfolio-category">
+                    <h3>Одноэтажные дома</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="домм1.jpg" alt="Одноэтажный дом 1">
+                            <div class="house-info">
+                                <h4>Классический одноэтажный</h4>
+                                <p>Метраж: 190 м²</p>
+                                <p>Количество комнат: 7</p>
+                                <p class="price">Цена: 7.5 млн ₽</p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house1')">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="домм2.webp" alt="Одноэтажный дом 2">
+                            <div class="house-info">
+                                <h4>Классический одноэтажный</h4>
+                                <p>Метраж: 197 м²</p>
+                                <p>Количество комнат: 8</p>
+                                <p class="price">Цена: 7.9 млн ₽</p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house2')">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="домм3 (2).jpg" alt="Одноэтажный дом 3">
+                            <div class="house-info">
+                                <h4>Классический одноэтажный</h4>
+                                <p>Метраж: 165 м²</p>
+                                <p>Количество комнат: 6</p>
+                                <p class="price">Цена: 6.9 млн ₽</p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house3')">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="домм4.webp" alt="Одноэтажный дом 4">
+                            <div class="house-info">
+                                <h4>Классический одноэтажный</h4>
+                                <p>Метраж: 175 м²</p>
+                                <p>Количество комнат: 5</p>
+                                <p class="price"><span class="old-price">7.1 млн ₽</span> <span class="new-price">6.39 млн ₽</span></p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house4')">Подробнее</a>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+
+                <div class="portfolio-category">
+                    <h3>Дома с мансардой</h3>
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <img src="доммм1.jpg" alt="дом с мансардой 1">
+                                <div class="house-info">
+                                    <h4>Классический с мансардой</h4>
+                                    <p>Метраж: 150 м²</p>
+                                    <p>Количество комнат: 5</p>
+                                    <p class="price">Цена: 6.5 млн ₽</p>
+                                    <a href="#" class="details-button" onclick="showHouseDetails(event, 'house5')">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="доммм2.jpg" alt="дом с мансардой 2">
+                                <div class="house-info">
+                                    <h4>Классический с мансардой</h4>
+                                    <p>Метраж: 140 м²</p>
+                                    <p>Количество комнат: 4</p>
+                                    <p class="price"><span class="old-price">5.5 млн ₽</span> <span class="new-price">4.84 млн ₽</span></p>
+                                    <a href="#" class="details-button" onclick="showHouseDetails(event, 'house6')">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="доммм3.jpg" alt="дом с мансардой 3">
+                                <div class="house-info">
+                                    <h4>Классический с мансардой</h4>
+                                    <p>Метраж: 160 м²</p>
+                                    <p>Количество комнат: 6</p>
+                                    <p class="price">Цена: 6.8 млн ₽</p>
+                                    <a href="#" class="details-button" onclick="showHouseDetails(event, 'house7')">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <img src="доммм4.jpg" alt="дом с мансардой 4">
+                                <div class="house-info">
+                                    <h4>Классический с мансардой</h4>
+                                    <p>Метраж: 175 м²</p>
+                                    <p>Количество комнат: 7</p>
+                                    <p class="price">Цена: 7.3 млн ₽</p>
+                                    <a href="#" class="details-button" onclick="showHouseDetails(event, 'house8')">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="portfolio-category">
+                    <h3>Двухэтажные дома</h3>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item">
+                            <img src="дд1.jpg" alt="Двухэтажный дом 1">
+                            <div class="house-info">
+                                <h4>Классический двухэтажный</h4>
+                                <p>Метраж: 220 м²</p>
+                                <p>Количество комнат: 7</p>
+                                <p class="price">Цена: 9.5 млн ₽</p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house9')">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="дд2.webp" alt="Двухэтажный дом 2">
+                            <div class="house-info">
+                                <h4>Современный двухэтажный</h4>
+                                <p>Метраж: 200 м²</p>
+                                <p>Количество комнат: 6</p>
+                                <p class="price">Цена: 8.9 млн ₽</p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house10')">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="дд4.jpg" alt="Двухэтажный дом 4">
+                            <div class="house-info">
+                                <h4>Просторный двухэтажный</h4>
+                                <p>Метраж: 250 м²</p>
+                                <p>Количество комнат: 8</p>
+                                <p class="price">Цена: 10.5 млн ₽</p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house11')">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="дд5.jpg" alt="Двухэтажный дом 5">
+                            <div class="house-info">
+                                <h4>Премиум двухэтажный</h4>
+                                <p>Метраж: 280 м²</p>
+                                <p>Количество комнат: 9</p>
+                                <p class="price"><span class="old-price">12.8 млн ₽</span> <span class="new-price">10.88 млн ₽</span></p>
+                                <a href="#" class="details-button" onclick="showHouseDetails(event, 'house12')">Подробнее</a>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Модальные окна для каждого дома -->
+        <!-- Дом 1 -->
+        <div id="house1" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house1')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="домм1.jpg" alt="Одноэтажный дом 1" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="домм1.jpg" alt="Фото 1" class="thumbnail active">
+                            <img src="PLAN1.jpeg" alt="Фото 2" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический одноэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>190 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>7</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Кирпич</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Монолитный</p>
+                            </div>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Система "умный дом"</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Энергосберегающие окна</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Кирпич керамический</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Базальтовая вата</li>
+                                <li>Отделка фасада: Декоративная штукатурка</li>
+                                <li>Окна: ПВХ с энергосберегающим стеклом</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">7.5 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 2 -->
+        <div id="house2" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house2')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="домм2.webp" alt="Одноэтажный дом 2" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="домм2.webp" alt="Фото 1" class="thumbnail active">
+                            <img src="plan2.jpg" alt="Фото 2" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический одноэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>197 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>8</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Газобетон</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Ленточный</p>
+                            </div>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Панорамное остекление</li>
+                                <li>Система климат-контроля</li>
+                                <li>Встроенная система хранения</li>
+                                <li>Домашний кинотеатр</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Газобетонные блоки</li>
+                                <li>Кровля: Гибкая черепица</li>
+                                <li>Утеплитель: Пенополистирол</li>
+                                <li>Отделка фасада: Фасадные панели</li>
+                                <li>Окна: Алюминиевые с энергосбережением</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">7.9 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 3 -->
+        <div id="house3" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house3')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="домм3 (2).jpg" alt="Одноэтажный дом 3" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="домм3 (2).jpg" alt="Фото 1" class="thumbnail active">
+                            <img src="plan3.jpg" alt="Фото 3" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический одноэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>165 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>6</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Пеноблок</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Свайный</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Энергоэффективное строительство</li>
+                                <li>Теплый пол в основных помещениях</li>
+                                <li>Приточно-вытяжная вентиляция</li>
+                                <li>Энергосберегающие окна</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Пеноблок</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Минеральная вата</li>
+                                <li>Отделка фасада: Штукатурка</li>
+                                <li>Окна: ПВХ с энергосбережением</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">6.9 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 4 -->
+        <div id="house4" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house4')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="домм4.webp" alt="Одноэтажный дом 4" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="домм4.webp" alt="Фото 1" class="thumbnail active">
+                            <img src="plan4.jpg" alt="Фото 2" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический одноэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>175 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>5</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Кирпич</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Монолитный</p>
+                            </div>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Энергосберегающие окна</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Кирпич керамический</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Базальтовая вата</li>
+                                <li>Отделка фасада: Декоративная штукатурка</li>
+                                <li>Окна: ПВХ с энергосберегающим стеклом</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <div class="discount-badge">Скидка 10%</div>
+                            <p class="price"><span class="old-price">7.1 млн ₽</span> <span class="new-price">6.39 млн ₽</span></p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 5 (с мансардой) -->
+        <div id="house5" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house5')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="доммм1.jpg" alt="Дом с мансардой 1" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="доммм1.jpg" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический с мансардой</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>150 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>5</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Газобетон</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Ленточный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (35 м²)</li>
+                                <li>Кухня-столовая (25 м²)</li>
+                                <li>2 спальни (по 15 м²)</li>
+                                <li>Санузел (8 м²)</li>
+                                <li>Мансарда:</li>
+                                <li>2 спальни (по 20 м²)</li>
+                                <li>Санузел (6 м²)</li>
+                                <li>Холл (10 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Мансардные окна</li>
+                                <li>Теплый пол на первом этаже</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Энергосберегающие окна</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Газобетонные блоки</li>
+                                <li>Кровля: Гибкая черепица</li>
+                                <li>Утеплитель: Пенополистирол</li>
+                                <li>Отделка фасада: Фасадные панели</li>
+                                <li>Окна: ПВХ с энергосбережением</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">6.5 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 6 (с мансардой) -->
+        <div id="house6" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house6')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="доммм2.jpg" alt="Дом с мансардой 2" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="доммм2.jpg" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический с мансардой</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>140 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>4</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Кирпич</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Монолитный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (32 м²)</li>
+                                <li>Кухня-столовая (22 м²)</li>
+                                <li>2 спальни (по 14 м²)</li>
+                                <li>Санузел (7 м²)</li>
+                                <li>Мансарда:</li>
+                                <li>2 спальни (по 18 м²)</li>
+                                <li>Санузел (5 м²)</li>
+                                <li>Холл (8 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Мансардные окна с автоматическим открыванием</li>
+                                <li>Теплый пол на первом этаже</li>
+                                <li>Приточно-вытяжная вентиляция</li>
+                                <li>Энергосберегающие окна</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Кирпич керамический</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Базальтовая вата</li>
+                                <li>Отделка фасада: Декоративная штукатурка</li>
+                                <li>Окна: ПВХ с энергосберегающим стеклом</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <div class="discount-badge">Скидка 12%</div>
+                            <p class="price"><span class="old-price">5.5 млн ₽</span> <span class="new-price">4.84 млн ₽</span></p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 7 (с мансардой) -->
+        <div id="house7" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house7')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="доммм3.jpg" alt="Дом с мансардой 3" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="доммм3.jpg" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический с мансардой</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>160 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>6</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Газобетон</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Ленточный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (38 м²) с камином</li>
+                                <li>Кухня-столовая (28 м²)</li>
+                                <li>2 спальни (по 16 м²)</li>
+                                <li>Санузел (9 м²)</li>
+                                <li>Мансарда:</li>
+                                <li>2 спальни (по 20 м²)</li>
+                                <li>Санузел (7 м²)</li>
+                                <li>Холл (12 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Мансардные окна с дистанционным управлением</li>
+                                <li>Теплый пол на первом этаже</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Система "умный дом"</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Газобетонные блоки</li>
+                                <li>Кровля: Гибкая черепица</li>
+                                <li>Утеплитель: Пенополистирол</li>
+                                <li>Отделка фасада: Фасадные панели</li>
+                                <li>Окна: ПВХ с энергосбережением</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">6.8 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 8 (с мансардой) -->
+        <div id="house8" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house8')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="доммм4.jpg" alt="Дом с мансардой 4" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="доммм4.jpg" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический с мансардой</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>175 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>7</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Кирпич</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Монолитный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (40 м²) с камином</li>
+                                <li>Кухня-столовая (30 м²)</li>
+                                <li>2 спальни (по 18 м²)</li>
+                                <li>Санузел (10 м²)</li>
+                                <li>Мансарда:</li>
+                                <li>3 спальни (по 22 м²)</li>
+                                <li>Санузел (8 м²)</li>
+                                <li>Холл (15 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Мансардные окна с автоматическим затемнением</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Система "умный дом"</li>
+                                <li>Домашний кинотеатр</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Кирпич керамический</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Базальтовая вата</li>
+                                <li>Отделка фасада: Декоративная штукатурка</li>
+                                <li>Окна: ПВХ с энергосберегающим стеклом</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">7.3 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 9 (Двухэтажный) -->
+        <div id="house9" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house9')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="дд1.jpg" alt="Двухэтажный дом 1" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="дд1.jpg" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Классический двухэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>220 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>7</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Газобетон</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Ленточный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (45 м²) с камином</li>
+                                <li>Кухня-столовая (35 м²)</li>
+                                <li>2 спальни (по 20 м²)</li>
+                                <li>Санузел (12 м²)</li>
+                                <li>Мансарда:</li>
+                                <li>4 спальни (по 25 м²)</li>
+                                <li>Санузел (10 м²)</li>
+                                <li>Холл (18 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Мансардные окна с автоматическим управлением</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Система "умный дом"</li>
+                                <li>Домашний кинотеатр</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Газобетонные блоки</li>
+                                <li>Кровля: Гибкая черепица</li>
+                                <li>Утеплитель: Пенополистирол</li>
+                                <li>Отделка фасада: Фасадные панели</li>
+                                <li>Окна: ПВХ с энергосбережением</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">9.5 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 10 (двухэтажный) -->
+        <div id="house10" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house10')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="дд2.webp" alt="Двухэтажный дом 2" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="дд2.webp" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Современный двухэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>200 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>6</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Газобетон</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Ленточный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (45 м²) с камином</li>
+                                <li>Кухня-столовая (35 м²)</li>
+                                <li>2 спальни (по 20 м²)</li>
+                                <li>Санузел (10 м²)</li>
+                                <li>Холл (15 м²)</li>
+                                <li>Второй этаж:</li>
+                                <li>2 спальни (по 25 м²)</li>
+                                <li>Санузел (12 м²)</li>
+                                <li>Холл (13 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Панорамное остекление</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Система "умный дом"</li>
+                                <li>Домашний кинотеатр</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Газобетонные блоки</li>
+                                <li>Кровля: Гибкая черепица</li>
+                                <li>Утеплитель: Пенополистирол</li>
+                                <li>Отделка фасада: Фасадные панели</li>
+                                <li>Окна: ПВХ с энергосбережением</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">8.9 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 11 (двухэтажный) -->
+        <div id="house11" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house11')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="дд4.jpg" alt="Двухэтажный дом 4" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="дд4.jpg" alt="Фото 1" class="thumbnail active">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Просторный двухэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>250 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>8</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Кирпич</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Монолитный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (50 м²) с камином</li>
+                                <li>Кухня-столовая (40 м²)</li>
+                                <li>2 спальни (по 25 м²)</li>
+                                <li>Санузел (12 м²)</li>
+                                <li>Холл (18 м²)</li>
+                                <li>Второй этаж:</li>
+                                <li>4 спальни (по 30 м²)</li>
+                                <li>Санузел (15 м²)</li>
+                                <li>Холл (20 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Панорамное остекление</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Система "умный дом"</li>
+                                <li>Домашний кинотеатр</li>
+                                <li>Система безопасности</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Кирпич керамический</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Базальтовая вата</li>
+                                <li>Отделка фасада: Декоративная штукатурка</li>
+                                <li>Окна: ПВХ с энергосберегающим стеклом</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <p class="price">10.5 млн ₽</p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Дом 12 (двухэтажный) -->
+        <div id="house12" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal('house12')">&times;</span>
+                <div class="house-details">
+                    <div class="house-gallery">
+                        <img src="дд5.jpg" alt="Двухэтажный дом 5" class="main-image">
+                        <div class="thumbnail-container">
+                            <img src="дд5.jpg" alt="Фото 1" class="thumbnail active">
+                            <img src="дд4.jpg" alt="Фото 2" class="thumbnail">
+                            <img src="дд3.jpg" alt="Фото 3" class="thumbnail">
+                            <img src="дд2.webp" alt="Фото 4" class="thumbnail">
+                        </div>
+                    </div>
+                    <div class="house-info-detailed">
+                        <h2>Премиум двухэтажный</h2>
+                        <div class="house-specs">
+                            <div class="spec-item">
+                                <h3>Общая площадь</h3>
+                                <p>300 м²</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Количество комнат</h3>
+                                <p>10</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Материал стен</h3>
+                                <p>Кирпич</p>
+                            </div>
+                            <div class="spec-item">
+                                <h3>Фундамент</h3>
+                                <p>Монолитный</p>
+                            </div>
+                        </div>
+                        <div class="house-plan">
+                            <h3>План дома:</h3>
+                            <ul>
+                                <li>Первый этаж:</li>
+                                <li>Гостиная (70 м²) с камином</li>
+                                <li>Кухня-столовая (50 м²)</li>
+                                <li>Кабинет (25 м²)</li>
+                                <li>2 спальни (по 35 м²)</li>
+                                <li>Санузел (15 м²)</li>
+                                <li>Холл (25 м²)</li>
+                                <li>Второй этаж:</li>
+                                <li>6 спален (по 40 м²)</li>
+                                <li>Санузел (20 м²)</li>
+                                <li>Холл (30 м²)</li>
+                                <li>Терраса (40 м²)</li>
+                            </ul>
+                        </div>
+                        <div class="house-features">
+                            <h3>Особенности:</h3>
+                            <ul>
+                                <li>Камин в гостиной</li>
+                                <li>Панорамное остекление</li>
+                                <li>Теплый пол во всех помещениях</li>
+                                <li>Вентиляция с рекуперацией</li>
+                                <li>Система "умный дом"</li>
+                                <li>Домашний кинотеатр</li>
+                                <li>Система безопасности</li>
+                                <li>Система климат-контроля</li>
+                                <li>Система очистки воздуха</li>
+                                <li>Автоматическое затемнение окон</li>
+                                <li>Система полива газона</li>
+                                <li>Видеонаблюдение</li>
+                            </ul>
+                        </div>
+                        <div class="house-materials">
+                            <h3>Материалы:</h3>
+                            <ul>
+                                <li>Стены: Кирпич керамический</li>
+                                <li>Кровля: Металлочерепица</li>
+                                <li>Утеплитель: Базальтовая вата</li>
+                                <li>Отделка фасада: Декоративная штукатурка</li>
+                                <li>Окна: ПВХ с энергосберегающим стеклом</li>
+                                <li>Внутренняя отделка: Премиум материалы</li>
+                                <li>Напольные покрытия: Паркетная доска</li>
+                                <li>Сантехника: Премиум класс</li>
+                            </ul>
+                        </div>
+                        <div class="house-price">
+                            <h3>Стоимость:</h3>
+                            <div class="discount-badge">Скидка 15%</div>
+                            <p class="price"><span class="old-price">12.8 млн ₽</span> <span class="new-price">10.88 млн ₽</span></p>
+                            <a href="zayavka.html" class="cta-button">Оставить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="company">
+                <h3>Компания:</h3>
+                <ul>
+                    <li><a href="company.html">О компании</a></li>
+                    <li><a href="politic.html">Политика конфиденциальности</a></li>
+                    <li><a href="personaldan.html">Персональные данные</a></li>
+                    <li><a href="pravila.html">Правила пользования сайта</a></li>
+                </ul>
+            </div>
+
+            <div class="crafted-living">
+                <h3>Crafted Living</h3>
+                <ul>
+                    <li><a href="sposoboplat.html">Способы оплаты</a></li>
+                    <li><a href="credit.html">Кредиты</a></li>
+                    <li><a href="garantia.html">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="stay-connected">
+                <h3>Оставайтесь на связи</h3>
+                <p>+7-901-052-69-89 (9:00-22:00)</p>
+                <p>Адрес: г. Москва, метро "Охотный ряд",</p>
+                <p>Тверская улица, 20/1с1</p>
+                <div class="social-icons">
+                    <a href="https://vk.com/club230679274?from=groups"><img src="вк.png" alt="VK"></a>
+                    <a href="https://t.me/crafted_living"><img src="тг.png" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            © 2025 Crafted Living. Все права защищены
+        </div>
+    </footer>
+
+    <button id="back-to-top-button" class="back-to-top" title="Наверх">▲</button>
+    <script src="script7.js"></script>
+    <script src="theme-switcher.js"></script>
+    <script>
+        function showHouseDetails(event, houseId) {
+            event.preventDefault();
+            document.getElementById(houseId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(houseId) {
+            document.getElementById(houseId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Закрытие модального окна при клике вне его
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Обработка миниатюр
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                modal.querySelector('.thumbnail.active').classList.remove('active');
+                this.classList.add('active');
+                modal.querySelector('.main-image').src = this.src;
+            });
+        });
+    </script>
+</body>
+</html>
